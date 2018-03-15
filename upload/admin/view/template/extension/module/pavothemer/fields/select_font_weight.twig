@@ -1,0 +1,21 @@
+<select name="{{ item.name }}[weight]" id="{{ item.id }}" class="{{ item.class }}"{{ item.multiple ? ' multiple' : '  ' }}>
+	<option value="">None</option>
+	<option value="100"{{ data.value.weight == '100' ? ' selected' : '' }}>100</option>
+	<option value="100i"{{ data.value.weight == '100i' ? ' selected' : '' }}>100 italic</option>
+	<option value="200"{{ data.value.weight == '200' ? ' selected' : '' }}>200</option>
+	<option value="200i"{{ data.value.weight == '200i' ? ' selected' : '' }}>200 italic</option>
+	<option value="300"{{ data.value.weight == '300' ? ' selected' : '' }}>300</option>
+	<option value="300i"{{ data.value.weight == '300i' ? ' selected' : '' }}>300 italic</option>
+	<option value="400"{{ data.value.weight == '400' ? ' selected' : '' }}>400</option>
+	<option value="400i"{{ data.value.weight == '400i' ? ' selected' : '' }}>400 italic</option>
+	<option value="500"{{ data.value.weight == '500' ? ' selected' : '' }}>500</option>
+	<option value="500i"{{ data.value.weight == '500i' ? ' selected' : '' }}>500 italic</option>
+	<option value="600"{{ data.value.weight == '600' ? ' selected' : '' }}>600</option>
+	<option value="600i"{{ data.value.weight == '600i' ? ' selected' : '' }}>600 italic</option>
+	<option value="700"{{ data.value.weight == '700' ? ' selected' : '' }}>700</option>
+	<option value="700i"{{ data.value.weight == '700i' ? ' selected' : '' }}>700 italic</option>
+	<option value="800"{{ data.value.weight == '800' ? ' selected' : '' }}>800</option>
+	<option value="800i"{{ data.value.weight == '800i' ? ' selected' : '' }}>800 italic</option>
+	<option value="900"{{ data.value.weight == '900' ? ' selected' : '' }}>900</option>
+	<option value="900i"{{ data.value.weight == '900i' ? ' selected' : '' }}>900 italic</option>
+</select>

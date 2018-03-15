@@ -1,0 +1,13 @@
+<div class="pavo-widget-button">
+	<a href="{{settings.link}}" class="{{ settings.extra_class ? [ ' ', settings.extra_class ] | join() : '' }}">
+		{% if settings.show_icon == "true" %}
+			{% if settings.icon_position == "left" %}
+				<i class="fa {{settings.icon}}"></i> {{settings.title}}
+			{% else %}
+				{{settings.title}} <i class="fa {{settings.icon}}"></i>
+			{% endif %}
+		{% else %}
+	 	{{settings.title}}
+	 	{% endif %} 
+	</a>
+</div>

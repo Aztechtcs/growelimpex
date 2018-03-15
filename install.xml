@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Pavo User Popup</name>
+	<code>pavuserpopup</code>
+	<version>1.0.0</version>
+	<author>Pavothemes</author>
+	<link>http://www.pavothemes.com</link>
+ 	
+ 	<file path="catalog/controller/common/footer.php">
+        <operation>
+            <search><![CDATA[$data['contact'] = $this->url->link('information/contact');]]></search>
+            <add position="before">
+                <![CDATA[
+               $data['user_popup'] = $this->load->controller('extension/module/pavuserpopup');
+            ]]>
+            </add>
+        </operation>     
+    </file>
+
+    <file path="catalog/view/theme/*/template/common/footer.twig">
+        <operation>
+            <search><![CDATA[</body>]]></search>
+            <add position="before">
+                <![CDATA[
+               {{ user_popup }}
+            ]]>
+            </add>
+        </operation>     
+    </file>
+
+</modification>

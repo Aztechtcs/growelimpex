@@ -1,0 +1,6 @@
+<div class="pavo-widget-heading {{ settings.extra_class ? [ ' ', settings.extra_class ] | join() : '' }} {{ settings.style }}">
+	<{{ settings.tag }} class="content-heading">{{ settings.heading }}</{{ settings.tag}}>
+	{% if settings.subheading %}
+	<div class="content-subheading">{{ settings.subheading }}</div>
+	{% endif %}
+</div>
