@@ -1,2 +1,0 @@
-# pavothemer
-PavoThemes OpenCart Framework
